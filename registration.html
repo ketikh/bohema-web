@@ -6,8 +6,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/select2.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Bohema</title>
 </head>
@@ -84,35 +87,58 @@
         </div>
         <div class="height-100">
             <div class="page-content-container c-container height-100 career-container no-padd">
-                <h1 class="dark-title txt-a-center auth-title">ავტორიზაცია</h1>
-                <div class="auth-form">
+                <h1 class="dark-title txt-a-center auth-title">რეგისტრაცია</h1>
+                <div class="auth-form reg-form">
                     <form action="">
+                        <div class="double-field">
+                            <div class="custom-field">
+                                <input type="text" placeholder="სახელი">
+                            </div>
+                            <div class="custom-field">
+                                <input type="text" placeholder="გვარი">
+                            </div>
+                        </div>
+                        <div class="custom-field error-field">
+                            <input type="text" placeholder="ელფოსტა" value="@gmail.com">
+                            <div class="error-txt">არასწორი ელფოსტა</div>
+                        </div>
+                        <label class="pure-material-textfield-outlined datepicker-field custom-field">
+                            <input type="text" class="datepicker" placeholder="დაბადების თარიღი">
+                            <img src="img/calendar.svg" alt="Calendar" class="calendar-icon">
+                        </label>
+                        <div class="double-field">
+                            <div class="select-cont">
+                                <select class="select2" name="state">
+                                    <option value=""></option>
+                                    <option value="1">0</option>
+                                    <option value="2">1</option>
+                                    <option value="3">2</option>
+                                    <option value="4">3</option>
+                                </select>
+                                <label class="select-label">ქვეყანა</label>
+                            </div>
+                            <div class="custom-field mb-more">
+                                <input type="text" placeholder="ქალაქი">
+                            </div>
+                        </div>
                         <div class="custom-field mb-more">
-                            <input type="text" placeholder="ელფოსტა">
+                            <input type="text" placeholder="მისამართი">
                         </div>
                         <div class="custom-field pass-field">
                             <input type="password" placeholder="პაროლი">
                             <img src="img/eye.svg" alt="Eye" class="show-pass eye-icon">
                         </div>
-                        <div class="forgot-pass">
-                            <a href="">დაგავიწყდა პაროლი?</a>
+                        <div class="custom-field pass-field">
+                            <input type="password" placeholder="გაიმეორე პაროლი">
+                            <img src="img/eye.svg" alt="Eye" class="show-pass eye-icon">
                         </div>
-                        <div class="or">
-                            <span>ან</span>                            
-                        </div>
-                        <div class="flex flex-j-between auth-soc">
-                            <a href="" class="fb-auth"><img src="img/fb-btn.svg" alt=""> Facebook</a>
-                            <a href="" class="google-auth"><img src="img/gmail.svg" alt=""> Google</a>
-                        </div>
-                        <button class="blue-btn auth-btn">შესვლა</button>
-                        <a href="registration.html" class="registration-link">არ გაქვთ ექაუნთი? <span>რეგისტარცია</span> </a>
+                        <button class="blue-btn auth-btn registration-btn">რეგისტრაცია</button>
+                        <a href="registration.html" class="registration-link">გაქვთ ექაუნთი?  <span>ავტორიზაცია</span> </a>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-    </script>
 </body>
 
 </html>

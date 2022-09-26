@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Bohema</title>
+</head>
+
+<body>
+
+    <div class="main-menu" style="background-image: url(img/menu-bg.png);">
+        <div class="main-menu-inside c-container">
+            <div class="header">
+                <div class="close-menu col3"><img src="img/close-menu.svg" alt="Close"></div>
+                <a href="index.html" class="col3 txt-c cursor-z"><img src="img/logo-ka.svg" alt="Bohema"></a>
+                <div class="col3"></div>
+            </div>
+            <div class="main-nav">
+                <a href="index.html">
+                    <div class="num">
+                        <img src="img/nav-0.svg" alt="0">
+                        <img src="img/nav-1.svg" alt="1">
+                    </div>
+                    <div class="nav-title">მთავარი</div>
+                </a>
+                <a href="about-us.html">
+                    <div class="num">
+                        <img src="img/nav-0.svg" alt="0">
+                        <img src="img/nav-2.svg" alt="2">
+                    </div>
+                    <div class="nav-title">ჩვენს შესახებ</div>
+                </a>
+                <a href="">
+                    <div class="num">
+                        <img src="img/nav-0.svg" alt="0">
+                        <img src="img/nav-3.svg" alt="3">
+                    </div>
+                    <div class="nav-title">გამოცემები</div>
+                </a>
+                <a href="">
+                    <div class="num">
+                        <img src="img/nav-0.svg" alt="0">
+                        <img src="img/nav-4.svg" alt="4">
+                    </div>
+                    <div class="nav-title">კითხვები</div>
+                </a>
+                <a href="">
+                    <div class="num">
+                        <img src="img/nav-0.svg" alt="0">
+                        <img src="img/nav-5.svg" alt="5">
+                    </div>
+                    <div class="nav-title">კონტაქტი</div>
+                </a>
+            </div>
+            <div class="store-btn">
+                <a href=""><img src="img/appstore.svg" alt="AppStore"></a>
+                <a href=""><img src="img/playstore.svg" alt="PlayStore"></a>
+            </div>
+        </div>
+    </div>
+    <div class="height-100 flex flex-d-column profile-content">
+        <!-- add this class >>>profile-content <<< only for profile page -->
+        <div class="header c-container">
+            <div class="col3">
+                <div class="cursor-z burger-menu">
+                    <img src="img/burger-menu-b.svg" alt="Menu">
+                </div>
+            </div>
+            <div class="flex flex-j-end col3">
+                <div class="h-search cursor-z">
+                    <img src="img/search-b.svg" alt="Search">
+                </div>
+                <!-- if user isnt logged show this div" -->
+                <!-- <div class="h-user cursor-z">
+                    <img src="img/user-b.svg" alt="User">
+                </div> -->
+                <a href="profile-info.html" class="h-user cursor-z logged-user"
+                    style="background-image: url(img/user.png);"></a><!-- if user is logged show this" -->
+                <div class="h-lang-switcher cursor-z">
+                    <div class="active-lang">GE</div>
+                </div>
+            </div>
+        </div>
+        <div class="height-100">
+            <div class="page-content-container c-container height-100 profile-container">
+                <div class="flex">
+                    <div class="profile-info-l">
+                        <div class="active-circle"></div>
+                        <div class="profile-tab active-tab">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 7.73755C6.9 7.73755 6 7.38755 5.3 6.68755C4.6 5.98755 4.25 5.08755 4.25 3.98755C4.25 2.88755 4.6 1.98755 5.3 1.28755C6 0.587549 6.9 0.237549 8 0.237549C9.1 0.237549 10 0.587549 10.7 1.28755C11.4 1.98755 11.75 2.88755 11.75 3.98755C11.75 5.08755 11.4 5.98755 10.7 6.68755C10 7.38755 9.1 7.73755 8 7.73755ZM0 15.7625V13.4125C0 12.7792 0.158333 12.2375 0.475 11.7875C0.791667 11.3375 1.2 10.9959 1.7 10.7625C2.81667 10.2625 3.8875 9.88755 4.9125 9.63755C5.9375 9.38755 6.96667 9.26255 8 9.26255C9.03334 9.26255 10.0583 9.39172 11.075 9.65005C12.0917 9.90838 13.1583 10.2792 14.275 10.7625C14.7917 10.9959 15.2083 11.3375 15.525 11.7875C15.8417 12.2375 16 12.7792 16 13.4125V15.7625H0ZM1.5 14.2625H14.5V13.4125C14.5 13.1459 14.4208 12.8917 14.2625 12.65C14.1042 12.4084 13.9083 12.2292 13.675 12.1125C12.6083 11.5959 11.6333 11.2417 10.75 11.05C9.86667 10.8584 8.95 10.7625 8 10.7625C7.05 10.7625 6.125 10.8584 5.225 11.05C4.325 11.2417 3.35 11.5959 2.3 12.1125C2.06667 12.2292 1.875 12.4084 1.725 12.65C1.575 12.8917 1.5 13.1459 1.5 13.4125V14.2625ZM8 6.23755C8.65 6.23755 9.1875 6.02505 9.6125 5.60005C10.0375 5.17505 10.25 4.63755 10.25 3.98755C10.25 3.33755 10.0375 2.80005 9.6125 2.37505C9.1875 1.95005 8.65 1.73755 8 1.73755C7.35 1.73755 6.8125 1.95005 6.3875 2.37505C5.9625 2.80005 5.75 3.33755 5.75 3.98755C5.75 4.63755 5.9625 5.17505 6.3875 5.60005C6.8125 6.02505 7.35 6.23755 8 6.23755Z"
+                                    fill="#80969E" />
+                            </svg>
+                            მომხმარებლის ინფო
+                        </div>
+                        <div class="profile-tab">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.125 13.075L8.275 9.275V3.925H9.775V8.65L13.2 12L12.125 13.075ZM8.925 18C6.44167 18 4.33333 17.1208 2.6 15.3625C0.866667 13.6042 0 11.475 0 8.975H1.5C1.5 11.0583 2.21667 12.8333 3.65 14.3C5.08333 15.7667 6.84167 16.5 8.925 16.5C11.0417 16.5 12.8333 15.7583 14.3 14.275C15.7667 12.7917 16.5 10.9917 16.5 8.875C16.5 6.80833 15.7583 5.0625 14.275 3.6375C12.7917 2.2125 11.0083 1.5 8.925 1.5C7.79167 1.5 6.72917 1.75833 5.7375 2.275C4.74583 2.79167 3.88333 3.475 3.15 4.325H5.775V5.825H0.55V0.625H2.05V3.275C2.91667 2.25833 3.94583 1.45833 5.1375 0.875C6.32917 0.291667 7.59167 0 8.925 0C10.175 0 11.35 0.233333 12.45 0.7C13.55 1.16667 14.5125 1.80417 15.3375 2.6125C16.1625 3.42083 16.8125 4.36667 17.2875 5.45C17.7625 6.53333 18 7.7 18 8.95C18 10.2 17.7625 11.375 17.2875 12.475C16.8125 13.575 16.1625 14.5333 15.3375 15.35C14.5125 16.1667 13.55 16.8125 12.45 17.2875C11.35 17.7625 10.175 18 8.925 18Z"
+                                    fill="#80969E" />
+                            </svg>
+
+                            ისტორია
+                        </div>
+                        <div class="profile-tab">
+                            <svg width="23" height="20" viewBox="0 0 23 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.825 20L6.15 12.4L0 8H7.6L10 0L12.4 8H20L13.85 12.4L16.175 20L10 15.3L3.825 20ZM6.575 15.925L10 13.325L13.425 15.925L12.05 11.6L15.2 9.55H11.425L10 5.225L8.575 9.55H4.8L7.95 11.6L6.575 15.925ZM19.85 20L17.775 18.4L16.175 13.2L20.025 10.45H22.6L17.925 13.8L19.85 20ZM13.9 6L13.15 3.45L14.175 0L16 6H13.9Z"
+                                    fill="#80969E" />
+                            </svg>
+                            რჩეული.
+                        </div>
+                        <div class="profile-tab">
+
+                            <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.25 16.15H8.75V12.925H12V11.425H8.75V8.175H7.25V11.425H4V12.925H7.25V16.15ZM1.5 20C1.1 20 0.75 19.85 0.45 19.55C0.15 19.25 0 18.9 0 18.5V1.5C0 1.1 0.15 0.75 0.45 0.45C0.75 0.15 1.1 0 1.5 0H10.525L16 5.475V18.5C16 18.9 15.85 19.25 15.55 19.55C15.25 19.85 14.9 20 14.5 20H1.5ZM9.775 6.15V1.5H1.5V18.5H14.5V6.15H9.775ZM1.5 1.5V6.15V1.5V18.5V1.5Z"
+                                    fill="#80969E" />
+                            </svg>
+                            გამოწერილი
+                        </div>
+                        <div class="profile-tab">
+                            <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.5 9.5C11.6667 9.5 10.9583 9.20834 10.375 8.625C9.79167 8.04167 9.5 7.33333 9.5 6.5C9.5 5.66667 9.79167 4.95833 10.375 4.375C10.9583 3.79167 11.6667 3.5 12.5 3.5C13.3333 3.5 14.0417 3.79167 14.625 4.375C15.2083 4.95833 15.5 5.66667 15.5 6.5C15.5 7.33333 15.2083 8.04167 14.625 8.625C14.0417 9.20834 13.3333 9.5 12.5 9.5ZM4.5 13C4.08333 13 3.72917 12.8542 3.4375 12.5625C3.14583 12.2708 3 11.9167 3 11.5V1.5C3 1.08333 3.14583 0.729167 3.4375 0.4375C3.72917 0.145833 4.08333 0 4.5 0H20.5C20.9167 0 21.2708 0.145833 21.5625 0.4375C21.8542 0.729167 22 1.08333 22 1.5V11.5C22 11.9167 21.8542 12.2708 21.5625 12.5625C21.2708 12.8542 20.9167 13 20.5 13H4.5ZM7 11.5H18C18 10.8 18.2417 10.2083 18.725 9.725C19.2083 9.24167 19.8 9 20.5 9V4C19.8 4 19.2083 3.75833 18.725 3.275C18.2417 2.79167 18 2.2 18 1.5H7C7 2.2 6.75833 2.79167 6.275 3.275C5.79167 3.75833 5.2 4 4.5 4V9C5.2 9 5.79167 9.24167 6.275 9.725C6.75833 10.2083 7 10.8 7 11.5ZM19 16H1.5C1.08333 16 0.729167 15.8542 0.4375 15.5625C0.145833 15.2708 0 14.9167 0 14.5V3H1.5V14.5H19V16ZM4.5 11.5V1.5V11.5Z"
+                                    fill="#80969E" />
+                            </svg>
+                            კოლექცია
+                        </div>
+                        <div class="profile-tab">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.625 20C1.89167 20 1.27083 19.7458 0.7625 19.2375C0.254167 18.7292 0 18.1083 0 17.375V14.25H3.175V0L4.675 1.5L6.175 0L7.65 1.5L9.15 0L10.65 1.5L12.15 0L13.65 1.5L15.15 0L16.65 1.5L18.15 0V17.375C18.15 18.1083 17.8958 18.7292 17.3875 19.2375C16.8792 19.7458 16.2583 20 15.525 20H2.625ZM15.525 18.5C15.8583 18.5 16.1292 18.3958 16.3375 18.1875C16.5458 17.9792 16.65 17.7083 16.65 17.375V2.5H4.675V14.25H14.4V17.375C14.4 17.7083 14.5042 17.9792 14.7125 18.1875C14.9208 18.3958 15.1917 18.5 15.525 18.5ZM6 6.45V4.95H12V6.45H6ZM6 9.8V8.3H12V9.8H6ZM14.325 6.45C14.125 6.45 13.95 6.375 13.8 6.225C13.65 6.075 13.575 5.9 13.575 5.7C13.575 5.5 13.65 5.325 13.8 5.175C13.95 5.025 14.125 4.95 14.325 4.95C14.525 4.95 14.7 5.025 14.85 5.175C15 5.325 15.075 5.5 15.075 5.7C15.075 5.9 15 6.075 14.85 6.225C14.7 6.375 14.525 6.45 14.325 6.45ZM14.325 9.675C14.125 9.675 13.95 9.6 13.8 9.45C13.65 9.3 13.575 9.125 13.575 8.925C13.575 8.725 13.65 8.55 13.8 8.4C13.95 8.25 14.125 8.175 14.325 8.175C14.525 8.175 14.7 8.25 14.85 8.4C15 8.55 15.075 8.725 15.075 8.925C15.075 9.125 15 9.3 14.85 9.45C14.7 9.6 14.525 9.675 14.325 9.675ZM2.6 18.5H12.9V15.75H1.5V17.375C1.5 17.7083 1.60417 17.9792 1.8125 18.1875C2.02083 18.3958 2.28333 18.5 2.6 18.5ZM1.5 18.5V15.75V18.5Z"
+                                    fill="#80969E" />
+                            </svg>
+                            ტრანზაქციები
+                        </div>
+                        <div class="profile-tab">
+                            <svg width="24" height="16" viewBox="0 0 24 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.85 7.61333C12.2833 7.07999 12.6042 6.52999 12.8125 5.96333C13.0208 5.39666 13.125 4.73833 13.125 3.98833C13.125 3.23833 13.0208 2.57999 12.8125 2.01333C12.6042 1.44666 12.2833 0.89666 11.85 0.363327C13.1167 0.0799932 14.2292 0.27166 15.1875 0.938327C16.1458 1.60499 16.625 2.62166 16.625 3.98833C16.625 5.35499 16.1458 6.37166 15.1875 7.03833C14.2292 7.70499 13.1167 7.89666 11.85 7.61333ZM17.25 15.7633V13.4133C17.25 12.5633 17.0333 11.7717 16.6 11.0383C16.1667 10.305 15.4167 9.68833 14.35 9.18833C17.2333 9.55499 19.2042 10.0883 20.2625 10.7883C21.3208 11.4883 21.85 12.3633 21.85 13.4133V15.7633H17.25ZM20 8.53833V6.03833H17.5V4.53833H20V2.03833H21.5V4.53833H24V6.03833H21.5V8.53833H20ZM7.875 7.73833C6.775 7.73833 5.875 7.38833 5.175 6.68833C4.475 5.98833 4.125 5.08833 4.125 3.98833C4.125 2.88833 4.475 1.98833 5.175 1.28833C5.875 0.588327 6.775 0.238327 7.875 0.238327C8.975 0.238327 9.875 0.588327 10.575 1.28833C11.275 1.98833 11.625 2.88833 11.625 3.98833C11.625 5.08833 11.275 5.98833 10.575 6.68833C9.875 7.38833 8.975 7.73833 7.875 7.73833ZM0 15.7633V13.4133C0 12.83 0.154167 12.3008 0.4625 11.8258C0.770833 11.3508 1.18333 10.9967 1.7 10.7633C2.9 10.23 3.97083 9.84666 4.9125 9.61333C5.85417 9.37999 6.84167 9.26333 7.875 9.26333C8.90833 9.26333 9.89167 9.37999 10.825 9.61333C11.7583 9.84666 12.825 10.23 14.025 10.7633C14.5417 10.9967 14.9583 11.3508 15.275 11.8258C15.5917 12.3008 15.75 12.83 15.75 13.4133V15.7633H0ZM7.875 6.23833C8.525 6.23833 9.0625 6.02583 9.4875 5.60083C9.9125 5.17583 10.125 4.63833 10.125 3.98833C10.125 3.33833 9.9125 2.80083 9.4875 2.37583C9.0625 1.95083 8.525 1.73833 7.875 1.73833C7.225 1.73833 6.6875 1.95083 6.2625 2.37583C5.8375 2.80083 5.625 3.33833 5.625 3.98833C5.625 4.63833 5.8375 5.17583 6.2625 5.60083C6.6875 6.02583 7.225 6.23833 7.875 6.23833ZM1.5 14.2633H14.25V13.4133C14.25 13.1467 14.1833 12.8967 14.05 12.6633C13.9167 12.43 13.7083 12.2467 13.425 12.1133C12.275 11.58 11.3 11.2217 10.5 11.0383C9.7 10.855 8.825 10.7633 7.875 10.7633C6.925 10.7633 6.05417 10.855 5.2625 11.0383C4.47083 11.2217 3.48333 11.58 2.3 12.1133C2.05 12.23 1.85417 12.4092 1.7125 12.6508C1.57083 12.8925 1.5 13.1467 1.5 13.4133V14.2633Z"
+                                    fill="#80969E" />
+                            </svg>
+
+                            მოიწვიე მეგობარი
+                        </div>
+                        <div class="profile-tab logout">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.5 18C1.1 18 0.75 17.85 0.45 17.55C0.15 17.25 0 16.9 0 16.5V1.5C0 1.1 0.15 0.75 0.45 0.45C0.75 0.15 1.1 0 1.5 0H8.775V1.5H1.5V16.5H8.775V18H1.5ZM13.65 13.375L12.575 12.3L15.125 9.75H6.375V8.25H15.075L12.525 5.7L13.6 4.625L18 9.025L13.65 13.375Z"
+                                    fill="#80969E" />
+                            </svg>
+                            გამოსვლა
+                        </div>
+                    </div>
+                    <div class="profile-info-r">
+                        <div class="upload-wrapper flex flex-a-center">
+                            <div class="file-upload">
+                                <div class="image-upload-wrap">
+                                    <input class="file-upload-input" type='file' onchange="readURL(this);"
+                                        accept="image/*" />
+                                    <img src="img/user-b.svg" alt="Upload" class="img">
+                                </div>
+                                <div class="file-upload-content">
+                                    <div class="file-upload-image" style="background: url();"></div>
+                                    <button type="button" onclick="removeUpload()"
+                                        class="remove-image">Remove</button>
+                                </div>
+                                <button class="file-upload-btn" type="button"
+                                    onclick="$('.file-upload-input').trigger( 'click' )"><img src="img/plus.svg"
+                                        alt="Plus"></button>
+                            </div>
+                            <div class="profile-user-name">სალომე
+                                მელიმონაძე</div>
+                        </div>
+                        <form action="" class="flex flex-j-between">
+                            <div class="profile-field-l">
+                                <div class="double-field">
+                                    <label class="pure-material-textfield-outlined">
+                                        <input type="text" placeholder=" ">
+                                        <span>სახელი</span>
+                                    </label>
+                                    <label class="pure-material-textfield-outlined">
+                                        <input type="text" placeholder=" ">
+                                        <span>გვარი</span>
+                                    </label>
+                                </div>
+                                <label class="pure-material-textfield-outlined">
+                                    <input type="text" placeholder=" ">
+                                    <span>ელფოსტა</span>
+                                </label>
+                                <label class="pure-material-textfield-outlined datepicker-field">
+                                    <input type="text" placeholder=" " class="datepicker">
+                                    <span>დაბადების თარიღი</span>
+                                    <img src="img/calendar.svg" alt="Calendar" class="calendar-icon">
+                                </label>
+                                <div class="double-field">
+                                    <div class="select-cont">
+                                        <select class="select2" name="state">
+                                            <option value=""></option>
+                                            <option value="1">0</option>
+                                            <option value="2">1</option>
+                                            <option value="3">2</option>
+                                            <option value="4">3</option>
+                                        </select>
+                                        <label class="select-label">ქვეყანა</label>
+                                    </div>
+                                    <label class="pure-material-textfield-outlined">
+                                        <input type="text" placeholder=" ">
+                                        <span>ქალაქი</span>
+                                    </label>
+                                </div>
+                                <label class="pure-material-textfield-outlined">
+                                    <input type="text" placeholder=" ">
+                                    <span>მისამართი</span>
+                                </label>
+                            </div>
+                            <div class="profile-field-r">
+                                <label class="pure-material-textfield-outlined pass-field">
+                                    <input type="password" placeholder=" ">
+                                    <span>მიმდინარე პაროლი</span>
+                                    <img src="img/eye.svg" alt="Eye" class="show-pass eye-icon">
+                                </label>
+                                <label class="pure-material-textfield-outlined pass-field">
+                                    <input type="password" placeholder=" ">
+                                    <span>ახალი პაროლი</span>
+                                    <img src="img/eye.svg" alt="Eye" class="show-pass eye-icon">
+                                </label>
+                                <label class="pure-material-textfield-outlined pass-field">
+                                    <input type="password" placeholder=" ">
+                                    <span>გაიმეორე პაროლი</span>
+                                    <img src="img/eye.svg" alt="Eye" class="show-pass eye-icon">
+                                </label>
+                                <button class="blue-btn auth-btn profile-save-btn">მონაცემების შეცვლა</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.image-upload-wrap').hide();
+
+                    $('.file-upload-image').attr('style', "background-image: url(" + e.target.result) + ")";
+                    $('.file-upload-content').show();
+
+                    //   $('.image-title').html(input.files[0].name);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.image-upload-wrap').show();
+        }
+    </script>
+</body>
+
+</html>
