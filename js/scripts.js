@@ -97,4 +97,39 @@ $(document).ready(function () {
         $('.ps').perfectScrollbar();
     }
 
+    const $tabs = document.querySelectorAll(".profile-tab"),
+    setActive = (e, $tabs) => {
+      e.preventDefault();
+      const divId = e.currentTarget.getAttribute("href");
+  
+      $tabs.forEach(($tab) => {
+        $tab.classList.remove("ai-tabs--active");
+      });
+  
+      document.querySelectorAll(".profile-info-r").forEach(($content) => {
+        $content.classList.remove("ai-tabs__content--active");
+      });
+  
+      e.currentTarget.classList.add("ai-tabs--active");
+      document.querySelector(divId).classList.add("ai-tabs__content--active");
+    };
+  
+  $tabs.forEach(($tab) => {
+    $tab.addEventListener("click", (e) => {
+      setActive(e, $tabs);
+    });
+  });
+
+  $('.checkbox-main').click(function(){
+      var pos = $(this).parents('.swiper-slide').offset();
+      $('.tt').offset(pos);
+      $('.subsc-bg').offset(pos);
+      $('.swiper-slide').removeClass('slide-act');
+      $(this).parents('.swiper-slide').addClass('slide-act');
+  });
+
+  $('.profile-tab').click(function(){
+    var pos = $(this).offset();
+    $('.outs').offset(pos);
+  });
 });
