@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/select2.min.js"></script>
     <script src="js/perfect-scrollbar.js"></script>
     <script src="js/swiper.js"></script>
@@ -20,6 +21,22 @@
 </head>
 
 <body>
+    <div class="modal" id="save-as-draft">
+        <div class="modal-dialog modal-dialog-centered package-popup">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="package-content">
+                        <div class="title">პაკეტის გაუქმება</div>
+                        <div class="sub-title">ნამდვილად გსურთ არსებული პაკეტის გაუქმება?</div>
+                        <div>
+                            <button class="close close-btn" data-bs-dismiss="modal" aria-label="Close">ახლა არა</button>
+                            <button class="remove-btn">პაკეტის გაუქმება</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="main-menu" style="background-image: url(img/menu-bg.png);">
         <div class="main-menu-inside c-container">
             <div class="header">
@@ -73,12 +90,18 @@
     <div class="height-100 flex flex-d-column profile-content">
         <!-- add this class >>>profile-content <<< only for profile page -->
         <div class="header c-container">
-            <div class="col3">
+            <div class="menu-col">
                 <div class="cursor-z burger-menu">
                     <img src="img/burger-menu-b.svg" alt="Menu">
                 </div>
             </div>
-            <div class="flex flex-j-end col3">
+            <div class="flex flex-j-end hr-col">
+            <div class="search-box">
+                <input type="text" placeholder="ძიება">
+                <div class="close-search-bar">
+                    <img src="img/close-b.svg" alt="Close">
+                </div>
+            </div>
                 <div class="h-search cursor-z">
                     <img src="img/search-b.svg" alt="Search">
                 </div>
@@ -407,14 +430,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="profile-info-r" id="profile-subscribe">
-                        <div class="cards-bg subsc-bg"></div>
+                    <div class="profile-info-r profile-subscribe-tab" id="profile-subscribe">
                         <div class="subscribe-tab">
                             <div class="subscribe-title title-24-b">გახდი ჩვენი გამომწერი</div>
                             <div class="subscribe-sub-title">ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია
                                 მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. </div>
                             <div class="subscribe-blocks">
-                                <div>
+                                <!-- <div class="cards-bg subsc-bg"></div> -->
+                                <div style="height: 100%;">
                                     <div class="swiper subscribe-swiper">
                                         <div class="swiper-wrapper">
                                                 <div class="tt">
@@ -435,7 +458,7 @@
                                                         ნებისმიერ
                                                         დროს ნაყიდის შენახვა ულიმიტოდ
                                                     </div>
-                                                    <div class="subscribe-bottom subscribe-cancel">პაკეტის გაუქმება
+                                                    <div class="subscribe-bottom subscribe-cancel" data-bs-toggle="modal" data-bs-target="#save-as-draft">პაკეტის გაუქმება
                                                     </div>
                                                 </div>
                                             </div>
@@ -452,7 +475,7 @@
                                                         ნებისმიერ
                                                         დროს ნაყიდის შენახვა ულიმიტოდ
                                                     </div>
-                                                    <div class="subscribe-bottom subscribe-cancel">პაკეტის გაუქმება
+                                                    <div class="subscribe-bottom subscribe-cancel">გამოიწერე
                                                     </div>
                                                 </div>
                                             </div>
@@ -469,7 +492,7 @@
                                                         ნებისმიერ
                                                         დროს ნაყიდის შენახვა ულიმიტოდ
                                                     </div>
-                                                    <div class="subscribe-bottom subscribe-cancel">პაკეტის გაუქმება
+                                                    <div class="subscribe-bottom subscribe-cancel">გამოიწერე
                                                     </div>
                                                 </div>
                                             </div>
@@ -486,7 +509,7 @@
                                                         ნებისმიერ
                                                         დროს ნაყიდის შენახვა ულიმიტოდ
                                                     </div>
-                                                    <div class="subscribe-bottom subscribe-cancel">პაკეტის გაუქმება
+                                                    <div class="subscribe-bottom subscribe-cancel">გამოიწერე
                                                     </div>
                                                 </div>
                                             </div>
@@ -744,8 +767,105 @@
                     </div>
                 </div>
             </div>
+            <div class="collection-main search-swiper">
+                <div class="swiper search-swiper-in ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="collection-block">
+                                <div class="collection-img" style="background-image: url(img/col1.png);">
+                                </div>
+                                <div class="collection-info">
+                                    <div class="title-16-b">ვარდობისთვე</div>
+                                    <div class="num">01</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="collection-block">
+                                <div class="collection-img" style="background-image: url(img/col1.png);">
+                                </div>
+                                <div class="collection-info">
+                                    <div class="title-16-b">ვარდობისთვე</div>
+                                    <div class="num">01</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="collection-block">
+                                <div class="collection-img" style="background-image: url(img/col1.png);">
+                                </div>
+                                <div class="collection-info">
+                                    <div class="title-16-b">ვარდობისთვე</div>
+                                    <div class="num">01</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="collection-block">
+                                <div class="collection-img" style="background-image: url(img/col1.png);">
+                                </div>
+                                <div class="collection-info">
+                                    <div class="title-16-b">ვარდობისთვე</div>
+                                    <div class="num">01</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="collection-block">
+                                <div class="collection-img" style="background-image: url(img/col1.png);">
+                                </div>
+                                <div class="collection-info">
+                                    <div class="title-16-b">ვარდობისთვე</div>
+                                    <div class="num">01</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="collection-block">
+                                <div class="collection-img" style="background-image: url(img/col1.png);">
+                                </div>
+                                <div class="collection-info">
+                                    <div class="title-16-b">ვარდობისთვე</div>
+                                    <div class="num">01</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="collection-block">
+                                <div class="collection-img" style="background-image: url(img/col1.png);">
+                                </div>
+                                <div class="collection-info">
+                                    <div class="title-16-b">ვარდობისთვე</div>
+                                    <div class="num">01</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="collection-block">
+                                <div class="collection-img" style="background-image: url(img/col1.png);">
+                                </div>
+                                <div class="collection-info">
+                                    <div class="title-16-b">ვარდობისთვე</div>
+                                    <div class="num">01</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="collection-block">
+                                <div class="collection-img" style="background-image: url(img/col1.png);">
+                                </div>
+                                <div class="collection-info">
+                                    <div class="title-16-b">ვარდობისთვე</div>
+                                    <div class="num">01</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    
     <script>
         function readURL(input) {
             if (input.files && input.files[0]) {
@@ -788,6 +908,19 @@
                 rows: 2,
             },
             spaceBetween: 20,
+            direction: 'horizontal',
+            mousewheel: {
+                enabled: true,
+                sensitivity: 5.5,
+            },
+        });
+
+        var swiper = new Swiper(".search-swiper-in", {
+            slidesPerView: 3.5,
+            grid: {
+                rows: 2,
+            },
+            spaceBetween: 74,
             direction: 'horizontal',
             mousewheel: {
                 enabled: true,

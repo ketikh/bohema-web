@@ -123,7 +123,7 @@ $(document).ready(function () {
   $('.checkbox-main').click(function(){
       var pos = $(this).parents('.swiper-slide').offset();
       $('.tt').offset(pos);
-      $('.subsc-bg').offset(pos);
+    //   $('.subsc-bg').offset(pos);
       $('.swiper-slide').removeClass('slide-act');
       $(this).parents('.swiper-slide').addClass('slide-act');
   });
@@ -131,5 +131,17 @@ $(document).ready(function () {
   $('.profile-tab').click(function(){
     var pos = $(this).offset();
     $('.outs').offset(pos);
+  });
+
+  $('.h-search').click(function(){
+    $(this).addClass('search-icon-active');
+    $('.search-box').addClass('search-box-active');
+    $('body').addClass('search-act');
+  });
+
+  $('.close-search-bar').click(function(){
+    $('.h-search').removeClass('search-icon-active');
+    $('.search-box').removeClass('search-box-active');
+    $('body').removeClass('search-act');
   });
 });
