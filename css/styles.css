@@ -2286,6 +2286,11 @@ h1.page-main-title.title-top {
     padding-right: 7%;
 }
 
+.slider-range-pag {
+    width: 790px;
+    margin: 116px auto 0;
+}
+
 @media screen and (max-height: 899px) and (min-height: 640px) {
 
     body {
