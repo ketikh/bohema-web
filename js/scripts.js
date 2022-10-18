@@ -143,4 +143,19 @@ $(document).ready(function () {
     $('.search-box').removeClass('search-box-active');
     $('body').removeClass('search-act');
   });
+    var oldSwpW = $(".catalogue-swiper .swiper-slide").width();
+    var oldSwpH = $(".catalogue-swiper .swiper-slide").height();
+  $('.catalogue-filter').click(function() {
+    $('body').toggleClass('show-catalogue-inside', 1000);
+    // if($('body').hasClass('show-catalogue-inside')) {
+    //     $(".catalogue-swiper .swiper-slide").animate({"width":$('.search-swiper-in .swiper-slide').width(),"height":$('.search-swiper-in .swiper-slide').height()}, 1000);
+
+    // } else {
+    //     $(".catalogue-swiper .swiper-slide").animate({"width":oldSwpW,"height":oldSwpH}, 1000);
+    // }
+    
+    // $('.catalogue-swiper .swiper-slide').css('width',$('.search-swiper-in .swiper-slide').width());
+    // $('.catalogue-swiper .swiper-slide').css('height',$('.search-swiper-in .swiper-slide').height());
+  });
+  
 });
