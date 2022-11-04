@@ -254,27 +254,29 @@
                                         <span>ქალაქი</span>
                                     </label>
                                 </div>
-                                <label class="pure-material-textfield-outlined">
+                                <label class="pure-material-textfield-outlined mb-none">
                                     <input type="text" placeholder=" ">
                                     <span>მისამართი</span>
                                 </label>
                             </div>
                             <div class="profile-field-r">
-                                <label class="pure-material-textfield-outlined pass-field">
-                                    <input type="password" placeholder=" ">
-                                    <span>მიმდინარე პაროლი</span>
-                                    <img src="img/eye.svg" alt="Eye" class="show-pass eye-icon">
-                                </label>
-                                <label class="pure-material-textfield-outlined pass-field">
-                                    <input type="password" placeholder=" ">
-                                    <span>ახალი პაროლი</span>
-                                    <img src="img/eye.svg" alt="Eye" class="show-pass eye-icon">
-                                </label>
-                                <label class="pure-material-textfield-outlined pass-field">
-                                    <input type="password" placeholder=" ">
-                                    <span>გაიმეორე პაროლი</span>
-                                    <img src="img/eye.svg" alt="Eye" class="show-pass eye-icon">
-                                </label>
+                                <div>
+                                    <label class="pure-material-textfield-outlined pass-field">
+                                        <input type="password" placeholder=" ">
+                                        <span>მიმდინარე პაროლი</span>
+                                        <img src="img/eye.svg" alt="Eye" class="show-pass eye-icon">
+                                    </label>
+                                    <label class="pure-material-textfield-outlined pass-field">
+                                        <input type="password" placeholder=" ">
+                                        <span>ახალი პაროლი</span>
+                                        <img src="img/eye.svg" alt="Eye" class="show-pass eye-icon">
+                                    </label>
+                                    <label class="pure-material-textfield-outlined pass-field">
+                                        <input type="password" placeholder=" ">
+                                        <span>გაიმეორე პაროლი</span>
+                                        <img src="img/eye.svg" alt="Eye" class="show-pass eye-icon">
+                                    </label>
+                                </div>
                                 <button class="blue-btn auth-btn profile-save-btn">მონაცემების შეცვლა</button>
                             </div>
                         </form>
@@ -675,7 +677,7 @@
                                             <div class="transaction-icon"><img src="img/transaction.svg" alt=""></div>
                                             <div>
                                                 <div class="title-16-b transaction-title">ჯურნალის ყიდვა</div>
-                                                <div>ბოჰემა 12 იანვარი 2022</div>
+                                                <div class="trans-sub-t">ბოჰემა 12 იანვარი 2022</div>
                                             </div>
                                         </div>
                                         <div class="flex flex-a-start transaction-col-r">
@@ -688,7 +690,7 @@
                                             <div class="transaction-icon"><img src="img/transaction.svg" alt=""></div>
                                             <div>
                                                 <div class="title-16-b transaction-title">ჯურნალის ყიდვა</div>
-                                                <div>ბოჰემა 12 იანვარი 2022</div>
+                                                <div class="trans-sub-t">ბოჰემა 12 იანვარი 2022</div>
                                             </div>
                                         </div>
                                         <div class="flex flex-a-start transaction-col-r">
@@ -701,7 +703,7 @@
                                             <div class="transaction-icon"><img src="img/transaction.svg" alt=""></div>
                                             <div>
                                                 <div class="title-16-b transaction-title">ჯურნალის ყიდვა</div>
-                                                <div>ბოჰემა 12 იანვარი 2022</div>
+                                                <div class="trans-sub-t">ბოჰემა 12 იანვარი 2022</div>
                                             </div>
                                         </div>
                                         <div class="flex flex-a-start transaction-col-r">
@@ -717,7 +719,7 @@
                                             <div class="transaction-icon"><img src="img/transaction.svg" alt=""></div>
                                             <div>
                                                 <div class="title-16-b transaction-title">ჯურნალის ყიდვა</div>
-                                                <div>ბოჰემა 12 იანვარი 2022</div>
+                                                <div class="trans-sub-t">ბოჰემა 12 იანვარი 2022</div>
                                             </div>
                                         </div>
                                         <div class="flex flex-a-start transaction-col-r">
@@ -730,7 +732,7 @@
                                             <div class="transaction-icon"><img src="img/transaction.svg" alt=""></div>
                                             <div>
                                                 <div class="title-16-b transaction-title">ჯურნალის ყიდვა</div>
-                                                <div>ბოჰემა 12 იანვარი 2022</div>
+                                                <div class="trans-sub-t">ბოჰემა 12 იანვარი 2022</div>
                                             </div>
                                         </div>
                                         <div class="flex flex-a-start transaction-col-r">
@@ -743,7 +745,7 @@
                                             <div class="transaction-icon"><img src="img/transaction.svg" alt=""></div>
                                             <div>
                                                 <div class="title-16-b transaction-title">ჯურნალის ყიდვა</div>
-                                                <div>ბოჰემა 12 იანვარი 2022</div>
+                                                <div class="trans-sub-t">ბოჰემა 12 იანვარი 2022</div>
                                             </div>
                                         </div>
                                         <div class="flex flex-a-start transaction-col-r">
@@ -947,6 +949,14 @@
                 enabled: true,
                 sensitivity: 5.5,
             },
+            breakpoints: {
+                1023: {
+                    slidesPerView: 2.5,
+                },
+                1399: {
+                    slidesPerView: 3.5,
+                }
+            },
             on: {
                 afterInit: function () {
                     var k = $('.subscribe-swiper .swiper-slide').width();
@@ -964,6 +974,14 @@
             slidesPerView: 3.5,
             grid: {
                 rows: 2,
+            },
+            breakpoints: {
+                1023: {
+                    slidesPerView: 2.5,
+                },
+                1399: {
+                    slidesPerView: 3.5,
+                }
             },
             spaceBetween: 20,
             direction: 'horizontal',

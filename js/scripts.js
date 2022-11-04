@@ -193,7 +193,15 @@ $(document).ready(function () {
             grid: {
                 rows: 2,
             },
-            spaceBetween: 74,
+            breakpoints: {
+                1023: {
+                    slidesPerView: 2.5,
+                },
+                1399: {
+                    slidesPerView: 3.4,
+                }
+            },
+            spaceBetween: 60,
             direction: 'horizontal',
             mousewheel: {
                 enabled: true,
@@ -228,6 +236,8 @@ $(document).ready(function () {
             swiper.on('slideChange', function () {
                 changeOnSlideChange();
             });
+
+            $('.swiper-slide').css('width','440px');
         }
         else {
             swiper = mainSwiper();
