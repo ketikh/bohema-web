@@ -1547,7 +1547,7 @@
 								point2D(left?100:0, top?100:0),
 								point2D(gradientEndPointA.x, gradientEndPointA.y),
 								[[gradientStartV, 'rgba(0,0,0,0)'],
-								[((1-gradientStartV)*0.8)+gradientStartV, 'rgba(0,0,0,'+(0.2*gradientOpacity)+')'],
+								[((1-gradientStartV)*1)+gradientStartV, 'rgba(0,0,0,'+(0.1*gradientOpacity)+')'],
 								[1, 'rgba(255,255,255,'+(0.2*gradientOpacity)+')']],
 								3,
 								alpha);
@@ -1557,7 +1557,7 @@
 								point2D(left?0:100, top?0:100),
 								point2D(gradientEndPointB.x, gradientEndPointB.y),
 								[[0.8, 'rgba(0,0,0,0)'],
-								[1, 'rgba(0,0,0,'+(0.3*gradientOpacity)+')'],
+								[1, 'rgba(0,0,0,'+(0.1*gradientOpacity)+')'],
 								[1, 'rgba(0,0,0,0)']],
 								3);
 					
