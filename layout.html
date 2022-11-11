@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/turn.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Bohema</title>
+	<style type="text/css">
+		body.hide-overflow {
+			overflow: hidden;
+		}
+
+		.book {
+			height: 768px;
+		}
+
+		/* helpers */
+
+		.book-wrapper {
+			display: table;
+			width: 1220px;
+			height: 768px;
+			margin: auto;
+		}
+
+		.book .turn-page {
+			background-color: #F4F4F4;
+			box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+			/* background-size: 100% 100%; */
+			/* padding-left: calc(7% + 80px); */
+			/* height: 100%; */
+		}
+
+		.page img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.page-wrapper {
+			background: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="smooth">
+		<div class="book-wrapper">
+			<div class="book-container">
+				<div class="book" id="book">
+					<div class="page">
+						<img src="img/poster1.jpg" alt="">
+					</div>
+					<div class="page">
+						<img src="img/z1.jpg" alt="">
+					</div>
+					<div class="page">
+						<img src="img/z2.jpg" alt="">
+					</div>
+					<div class="page">
+						<img src="img/z3.jpg" alt="">
+					</div>
+					<div class="page">
+						<img src="img/z4.jpg" alt="">
+					</div>
+					<div class="page">
+						<img src="img/z5.jpg" alt="">
+					</div>
+					<div class="page">
+						<img src="img/z6.jpg" alt="">
+					</div>
+					<div class="page">
+						<img src="img/z7.jpg" alt="">
+					</div>
+					<div class="page">
+						<img src="img/z8.jpg" alt="">
+					</div>
+					<div class="page">
+						<img src="img/z9.jpg" alt="">
+					</div>
+					<div class="page">
+						<img src="img/z10.jpg" alt="">
+					</div>
+					<div class="page">
+						<img src="img/z11.jpg" alt="">
+					</div>
+					<div class="page">
+						<img src="img/z12.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('.smooth').on('mousewheel', function (e) {
+			clearTimeout($.data(this, 'timer'));
+			$.data(this, 'timer', setTimeout(function () {
+
+				if (e.originalEvent.deltaY > 0) {
+					$('#book').turn('next');
+				}
+				else {
+					$('#book').turn('previous');
+				}
+			}, 150));
+		});
+		$(window).bind('keydown', function (e) {
+
+			if (e.keyCode == 37)
+				$('#book').turn('previous');
+			else if (e.keyCode == 39)
+				$('#book').turn('next');
+
+		});
+
+
+		$('#book').turn({
+			display: 'single',
+			duration: 1900,
+			acceleration: false
+		});
+
+	</script>
+
+</body>
+
+</html>
